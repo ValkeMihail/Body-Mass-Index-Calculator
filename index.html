@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Your Body Mass Index</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script  src="CalcIndex.js" ></script>
+    
+</head>
+<body>
+    <div id ="formWrapper">
+    <h1 align="center">Body Mass Index Calculator </h1>
+    <p style="margin: 0 0 0 2em" align="left">Select Height:
+        
+      <select style="margin: 0 0 0 0.6em" name="Height" id="Height" form="form1">
+        <option value="1.40">1.40 m - 4 feet, 7.1 in</option>
+        <option value="1.41">1.41 m - 4 feet, 7.5 in</option>
+        <option value="1.42">1.42 m - 4 feet, 7.9 in</option>
+        <option value="1.43">1.43 m - 4 feet, 8.3 in</option>
+        <option value="1.44">1.44 m - 4 feet, 8.7 in</option>
+        <option value="1.45">1.45 m - 4 feet, 9.1 in</option>
+        <option value="1.46">1.46 m - 4 feet, 9.5 in</option>
+        <option value="1.47">1.47 m - 4 feet, 9.9 in</option>
+        <option value="1.48">1.48 m - 4 feet, 10.3 in</option>
+        <option value="1.49">1.49 m - 4 feet, 10.7 in</option>
+        <option value="1.50">1.50 m - 4 feet, 11.1 in</option>
+        <option value="1.51">1.51 m - 4 feet, 11.4 in</option>
+        <option value="1.52">1.52 m - 4 feet, 11.8 in</option>
+        <option value="1.53">1.53 m - 5 feet, 0.2 in</option>
+        <option value="1.54">1.54 m - 5 feet, 0.6 in</option>
+        <option value="1.55">1.55 m - 5 feet, 1 in</option>
+        <option value="1.56">1.56 m - 5 feet, 1.4 in</option>
+        <option value="1.57">1.57 m - 5 feet, 1.8 in</option>
+        <option value="1.58">1.58 m - 5 feet, 2.2 in</option>
+        <option value="1.59">1.59 m - 5 feet, 2.6 in</option>
+        <option value="1.60">1.60 m - 5 feet, 3 in</option>
+        <option value="1.61">1.61 m - 5 feet, 3.4 in</option>
+        <option value="1.62">1.62 m - 5 feet, 3.8 in</option>
+        <option value="1.63">1.63 m - 5 feet, 4.2 in</option>
+        <option value="1.64">1.64 m - 5 feet, 4.6 in</option>
+        <option value="1.65">1.65 m - 5 feet, 5 in</option>
+        <option value="1.66">1.66 m - 5 feet, 5.4 in</option>
+        <option value="1.67">1.67 m - 5 feet, 5.7 in</option>
+        <option value="1.68">1.68 m - 5 feet, 6.1 in</option>
+        <option value="1.69">1.69 m - 5 feet, 6.5 in</option>
+        <option value="1.70">1.70 m - 5 feet, 6.9 in</option>
+        <option value="1.71">1.71 m - 5 feet, 7.3 in</option>
+        <option value="1.72">1.72 m - 5 feet, 7.7 in</option>
+        <option value="1.73">1.73 m - 5 feet, 8.1 in</option>
+        <option value="1.74">1.74 m - 5 feet, 8.5 in</option>
+        <option value="1.75">1.75 m - 5 feet, 8.9 in</option>
+        <option value="1.76">1.76 m - 5 feet, 9.3 in</option>
+        <option value="1.77">1.77 m - 5 feet, 9.7 in</option>
+        <option value="1.78">1.78 m - 5 feet, 10.1 in</option>
+        <option value="1.79">1.79 m - 5 feet, 10.5 in</option>
+        <option value="1.80">1.80 m - 5 feet, 10.9 in</option>
+        <option value="1.81">1.81 m -	5 feet, 11.3 in</option>
+        <option value="1.82">1.82 m -	5 feet, 11.7 in</option>
+        <option value="1.83">1.83 m -	6 feet, 0 in</option>
+        <option value="1.84">1.84 m -	6 feet, 0.4 in</option>
+        <option value="1.85">1.85 m -	6 feet, 0.8 in</option>
+        <option value="1.86">1.86 m	- 6 feet, 1.2 in</option>
+        <option value="1.87">1.87 m	- 6 feet, 1.6 in</option>
+        <option value="1.88">1.88 m -	6 feet, 2 in</option>
+        <option value="1.89">1.89 m	- 6 feet, 2.4 in</option>
+        <option value="1.90">1.90 m	- 6 feet, 2.8 in</option>
+        <option value="1.91">1.91 m	- 6 feet, 3.2 in</option>
+        <option value="1.92">1.92 m	- 6 feet, 3.6 in</option>
+        <option value="1.93">1.93 m	- 6 feet, 4 in</option>
+        <option value="1.94">1.94 m	- 6 feet, 4.4 in</option>
+        <option value="1.95">1.95 m	- 6 feet, 4.8 in</option>
+        <option value="1.96">1.96 m	- 6 feet, 5.2 in</option>
+        <option value="1.97">1.97 m	- 6 feet, 5.6 in</option>
+        <option value="1.98">1.98 m	- 6 feet, 6 in</option>
+        <option value="1.99">1.99 m - 6 feet, 6.3 in</option>
+        <option value="2.00">2.00 m	- 6 feet, 6.7 in</option>
+        <option value="2.01">2.01 m	- 6 feet, 7.1 in</option>
+        <option value="2.02">2.02 m	- 6 feet, 7.5 in</option>
+        <option value="2.03">2.03 m	- 6 feet, 7.9 in</option>
+        <option value="2.04">2.04 m	- 6 feet, 8.3 in</option>
+        <option value="2.05">2.05 m	- 6 feet, 8.7 in</option>
+        <option value="2.06">2.06 m	- 6 feet, 9.1 in</option>
+        <option value="2.07">2.07 m	- 6 feet, 9.5 in</option>
+        <option value="2.08">2.08 m	- 6 feet, 9.9 in</option>
+        <option value="2.09">2.09 m	- 6 feet, 10.3 in</option>
+        <option value="2.10">2.10 m	- 6 feet, 10.7 in</option>
+        <option value="2.11">2.11 m	- 6 feet, 11.1 in</option>
+        <option value="2.12">2.12 m	- 6 feet, 11.5 in</option>
+        <option value="2.13">2.13 m	- 6 feet, 11.9 in</option>
+        <option value="2.14">2.14 m	- 7 feet, 0.3 in</option>
+        <option value="2.15">2.15 m	- 7 feet, 0.6 in</option>
+        <option value="2.16">2.16 m	- 7 feet, 1 in</option>
+        <option value="2.17">2.17 m	- 7 feet, 1.4 in</option>
+        <option value="2.18">2.18 m	- 7 feet, 1.8 in</option>
+        <option value="2.19">2.19 m	- 7 feet, 2.2 in</option>
+        <option value="2.20">2.20 m	- 7 feet, 2.6 in</option>
+      </select>
+    </p>
+    <form action="" method="post" enctype="multipart/form-data" name="form1" id="form1">
+      <label></label>
+    
+    <p  style="margin:1em 0 0 2em; text-align: left">Weight (kg)
+      <label for="Weight">:</label>
+      <input style="margin: 0 0 0 1em" name="Weight"  type="text" id="Weight" form="form1" />
+    </p>
+    <p style="text-align: left">
+      <input style="margin: 0 0 0 2.3em" name="button" type="button" id="button" form="form1" value="Calculate" onclick="CalculIndice()" />
+    <br />
+    <br />
+      <span style="text-align: center"></span></p>
+    <p style="margin:0 0 0 2em ;text-align: left"><span style="text-align: center">Your Body Mass Index</span>
+      <label for="indice">:</label>
+      <input style="margin: 0 0 0 2em" name="indice" type="text" disabled="disabled" id="indice" form="form1" />
+    </p>
+    <p style="margin:0.5em 0 0 2em;text-align: left">BMI Category
+      <label for="rezultat">:</label>
+      <input style="margin: 0 0 0 6.65em" name="rezultat" type="text" disabled="disabled" id="rezultat" form="form1" />
+    </p>
+        
+    <p><span style="text-align: left"></span>
+      <span style="text-align: center"></span></p>
+    
+    <table width="550"; border="0">
+      <tbody>
+        <tr>
+         <td width="140" align="center" valign="top" id="td1">&nbsp;</td>
+         <td width="120" align="center" valign="top" id="td2">&nbsp;</td>
+         <td width="124" align="center" valign="top" id="td3">&nbsp;</td>
+         <td width="148" align="center" valign="top" id="td4">&nbsp;</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    </form></div>
+    </body>
+</html>

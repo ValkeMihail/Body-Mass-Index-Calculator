@@ -1,0 +1,45 @@
+body {
+	background:url('b4.jpg');
+	height:100%;
+	width:100%;
+	position:fixed;
+	margin: 0;
+	padding: 0;
+	z-index:-100;
+	top:0px;
+	left:0px;
+	background-repeat: no-repeat;
+	min-height: 100%;
+	min-width: 100%;
+	background-size:100% ;
+	font-size: 18px;
+}
+
+table{ position: fixed; top:0px; 
+	background:url('b3.jpg'); 
+	width:550px;
+	height: 260px;
+	margin-top: 400px;
+	background-size: 100%;
+}
+#formWrapper{
+	width:550px;
+	height:547px;
+	background:#99D0FD;   
+	margin:2em auto 0 auto;
+	padding: 2em 0 2em 0;
+	border:solid 5px #f1f1f1;
+}
+
+#td1{
+	visibility: hidden;background-color:#ffffff;
+}
+#td2{
+	visibility: hidden;background-color:#ffffff;
+}
+#td3{
+	visibility: hidden;background-color:#ffffff;
+}
+#td4{
+	visibility: hidden;background-color:#ffffff;
+}
